@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 20px 40px;
+}
+
+
+.quadrado {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+    color: #333;
+}
+
+.linha {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+#vermelho {
+    background-color: red;
+}
+
+#verde {
+    background-color: green;
+}
+
+#azul {
+    background-color: blue;
+}
+
+#azul-escuro {
+    background-color: #1e3a5f;
+}
+
+#cinza,
+#exemplo-hover,
+#efeito1,
+#efeito2,
+#efeito3 {
+    background-color: #e6e6e6;
+}
+
+#cinza {
+    transition: background-color 0.3s;
+}
+
+#cinza:hover {
+    background-color: yellow;
+}
+
+
+.numero {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.frase {
+    font-size: 15px;
+}
+
+
+.revela {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.quadrado:hover .revela {
+    opacity: 1;
+}
+
+
+#exemplo-hover {
+    transition: background-color 0.3s;
+}
+
+#exemplo-hover:hover {
+    background-color: yellow;
+}
+
+
+.grade-l {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    gap: 10px;
+    width: fit-content;
+}
+
+#efeito1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#efeito2 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#efeito3 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#efeito1,
+#efeito2,
+#efeito3 {
+    transition: all 0.3s;
+}
+
+
+#efeito1:hover {
+    color: red;
+}
+
+
+#efeito2:hover {
+    background-color: yellow;
+    color: red;
+}
+
+
+#efeito3:hover {
+    background-color: #2f80ed;
+    color: white;
+    border-radius: 50%;
+    transform: scale(1.1);
+}
+
+
+#texto-pseudo {
+    line-height: 1.5;
+}
+
+
+#texto-pseudo::first-letter {
+    font-size: 3.5em;
+    line-height: 0.8; 
+    font-weight: bold;
+}
+
+.destaque {
+    color: red;
+}
+
+.links a {
+    display: block;
+    margin-bottom: 6px;
+}
+
+.links a::before {
+    content: ">>> ";
+}
+
+.links a::after {
+    content: " [link]";
+}
