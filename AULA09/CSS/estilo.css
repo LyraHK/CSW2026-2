@@ -1,0 +1,19 @@
+body {
+    background-color: #dddddd;
+    font-family: monospace;
+    color: #333;
+}
+
+h1 {
+    background-color: #ff9966;
+    color: rgb(250, 250, 250);
+    padding: 5px;
+}
+
+a {
+    color: blue;
+}
+
+.link-direita {
+    text-align: right;
+}
